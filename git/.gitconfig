@@ -1,0 +1,37 @@
+[user]
+  name = Tobias Schneider
+  email = Tobias.Schneider@Tobsch.org
+  signingKey = 7917F86F3F954808
+[pretty]
+  graph = %Cred%h%Creset | %C(bold blue)%ad%Creset | %s%C(yellow)%d %Cgreen(%cr)%Creset [%an]
+[core]
+  excludesfile = /home/schneider/.gitignore
+  editor = vim
+[color]
+  ui = true
+[push]
+  default = simple
+[diff]
+  indentHeuristic = on
+[alias]
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=iso
+  lg = log --graph --pretty=graph --date=iso
+  lga = log --graph --pretty=graph --date=iso --all
+  lgs = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''%C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
+  s = status
+  sb = status -sb
+  prs = pull --rebase --prune --autostash
+  pr = pull --rebase --prune
+  pu = push
+  poo = push
+  c = commit
+  co = checkout
+  cob = checkout -b
+  rlb = !git branch --merged | grep -v \"master\\|development\" >/tmp/merged-branches && vi /tmp/merged-branches && xargs git branch -d </tmp/merged-branches
+  fix = commit --fixup
+  fixit =  rebase -i --autosquash
+  score = shortlog -s -n
+[commit]
+  gpgSign = true
+[cola]
+  spellcheck = false
