@@ -3,3 +3,5 @@ if [[ -f ~/.bashrc ]]; then
 fi
 
 [ -s "/home/schneider/.jabba/jabba.sh" ] && source "/home/schneider/.jabba/jabba.sh"
+
+source <(kubectl completion bash)
