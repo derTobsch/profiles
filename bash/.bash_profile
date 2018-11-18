@@ -4,4 +4,7 @@ fi
 
 [ -s "/home/schneider/.jabba/jabba.sh" ] && source "/home/schneider/.jabba/jabba.sh"
 
-source <(kubectl completion bash)
+
+if [ -x "$(command -v kubectl)" ]; then
+    source <(kubectl completion bash)
+fi
