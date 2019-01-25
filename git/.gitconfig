@@ -25,7 +25,9 @@
   pu = push
   poo = push
   c = commit
-  ca = commit --amend --no-edit
+  cm = !git add -A && git commit -m
+  amend = commit -a --amend
+  wip = !git add -A && git commit --no-verify -m "[WIP]"
   co = checkout
   cob = checkout -b
   rlb = !git branch --merged | grep -v \"master\\|development\" >/tmp/merged-branches && vi /tmp/merged-branches && xargs git branch -d </tmp/merged-branches
