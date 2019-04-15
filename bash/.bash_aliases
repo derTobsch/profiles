@@ -17,7 +17,7 @@ alias mcv='mvnn clean verify'
 alias mcr='mvnn clean spring-boot:run -Dspring.output.ansi.enabled=ALWAYS'
 
 alias mvn-dep='mvnn -DprocessDependencyManagement=false versions:display-dependency-updates versions:display-property-updates'
-alias mvn-mvnw="mvn -N io.takari:maven:wrapper -Dmaven=3.6.0"
+alias mvn-mvnw="mvn -N io.takari:maven:wrapper -Dmaven=3.6.1"
 
 # mvn
 notified_maven() {
