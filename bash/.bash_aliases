@@ -14,6 +14,7 @@ alias update-this-shit='sudo apt update && sudo apt upgrade && sudo apt full-upg
 alias mci='mvnn clean install'
 alias mcp='mvnn clean package'
 alias mcv='mvnn clean verify'
+alias mct='mvnn clean test'
 alias mcr='mvnn clean spring-boot:run -Dspring.output.ansi.enabled=ALWAYS'
 
 alias mvn-dep='mvnn -DprocessDependencyManagement=false versions:display-dependency-updates versions:display-property-updates'
