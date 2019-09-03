@@ -6,7 +6,9 @@ ZSH_THEME="robbyrussell"
 
 # Plugins
 plugins=(
-zsh-autosuggestions
+  zsh-autosuggestions
+  docker
+  kubectl
 )
 
 source $ZSH/oh-my-zsh.sh
