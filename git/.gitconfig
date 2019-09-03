@@ -2,17 +2,23 @@
   name = Tobias Schneider
   email = Tobias.Schneider@Tobsch.org
   signingKey = 7917F86F3F954808
+
 [pretty]
   graph = %Cred%h%Creset | %C(bold blue)%ad%Creset | %s%C(yellow)%d %Cgreen(%cr)%Creset [%an]
+
 [core]
   excludesfile = /home/schneider/.gitignore
   editor = vim
+
 [color]
   ui = true
+
 [push]
   default = simple
+
 [diff]
   indentHeuristic = on
+
 [alias]
   hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=iso
   lg = log --graph --pretty=graph --date=iso
@@ -34,7 +40,12 @@
   fix = commit --fixup
   fixit =  rebase -i --autosquash
   score = shortlog -s -n
+
 [commit]
   gpgSign = true
+
 [cola]
   spellcheck = false
+
+[includeIf "gitdir:~/projects/work/"]
+   path = ~/projects/work/.gitconfig
