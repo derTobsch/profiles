@@ -8,9 +8,9 @@ if [[ "$arg" == "-i" || "$arg" == "--install" ]]; then
 
     echo -e "\u001b[37;1m\u001b[4mSelect an option:\u001b[0m"
     echo -e "  \u001b[34;1m 1) for custom zsh \u001b[0m"
-    echo -e "  \u001b[34;1m 3) for custom git \u001b[0m"
-    echo -e "  \u001b[34;1m 4) for jabba \u001b[0m"
-    echo -e "  \u001b[34;1m 5) for docker/kubectl \u001b[0m"
+    echo -e "  \u001b[34;1m 2) for custom git \u001b[0m"
+    echo -e "  \u001b[34;1m 3) for jabba \u001b[0m"
+    echo -e "  \u001b[34;1m 4) for docker/kubectl \u001b[0m"
     echo -e "  \u001b[31;1m 0) to Exit \u001b[0m"
 
     read option
