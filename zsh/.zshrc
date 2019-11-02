@@ -22,3 +22,5 @@ EDITOR=vim
 
 # Aliases
 source $HOME/.aliases
+
+[ -s "/home/tobsch/.jabba/jabba.sh" ] && source "/home/tobsch/.jabba/jabba.sh"
