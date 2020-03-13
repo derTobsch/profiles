@@ -1,6 +1,6 @@
 # Profiles
 
-Here are my profiles for Bash, zsh, Git and others.
+Here are my profiles for zsh, Git and others.
 
 ## Installation
 
