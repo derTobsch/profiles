@@ -6,6 +6,7 @@ echo "/> Git"
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # Git
+cp ${HOME}/.gitconfig ${HOME}/.gitconfig
 ln -sf ${DIR}/.gitconfig ${HOME}
 
 # Bash with Git
