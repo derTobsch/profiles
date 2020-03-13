@@ -13,5 +13,5 @@ curl -s https://raw.githubusercontent.com/git/git/master/contrib/completion/git-
   -o ${HOME}/.git-prompt.sh
 
 ## GitIgnore
-curl -s https://www.gitignore.io/api/java,intellij \
+curl -s https://www.gitignore.io/api/java,intellij,gradle,kotlin \
   -o ${HOME}/.gitignore
