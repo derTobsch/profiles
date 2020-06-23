@@ -38,6 +38,30 @@ notified_maven() {
 }
 alias mvnn=notified_maven
 
+# Gradle
+alias gb='gradlen build'
+alias gt='gradlen test'
+alias gdep='gradlen dependencyUpdates -Drevision=release'
+alias gwrapper='gradlen wrapper --gradle-version 6.5 --distribution-type all'
+
+
+# mvn
+notified_gradle() {
+  if [[ -x ./gradlew ]]; then
+    echo "/> Gradle Wrapper"
+    ./gradlew $@
+  else
+    echo "/> Gradle"
+    gradle $@
+  fi
+
+  if [[ $? -eq 0 ]]; then
+    notify-send --icon=face-cool "`basename $(pwd)`: gradle $*" "Build SUCCESS"
+  else
+    notify-send --icon=face-crying "`basename $(pwd)`: gradle $*" "Build FAILED"
+  fi
+}
+alias gradlen=notified_gradle
 
 # Git - fetch all repositories in current directory
 refresh_all_repos() {
