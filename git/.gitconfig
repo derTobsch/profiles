@@ -7,7 +7,7 @@
   graph = %Cred%h%Creset | %C(bold blue)%ad%Creset | %s%C(yellow)%d %Cgreen(%cr)%Creset [%an]
 
 [core]
-  excludesfile = /home/schneider/.gitignore
+  excludesfile = ~/.gitignore
   editor = vim
 
 [color]
