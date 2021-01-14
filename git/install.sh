@@ -2,6 +2,9 @@
 
 echo "/> Git"
 
+sudo apt-get update
+sudo apt-get install curl
+
 # Get the installation script directory path
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
