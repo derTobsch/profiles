@@ -17,3 +17,6 @@ cp ${HOME}/.zshrc ${HOME}/.zshrc_backup
 ln -sf ${DIR}/.zshrc ${HOME}
 cp ${HOME}/.aliases ${HOME}/.aliases_backup
 ln -sf ${DIR}/.aliases ${HOME}
+
+# zsh as default shell
+chsh -s $(which zsh)
