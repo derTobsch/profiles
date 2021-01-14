@@ -23,4 +23,5 @@ EDITOR=vim
 # Aliases
 source $HOME/.aliases
 
-[ -s "/home/tobsch/.jabba/jabba.sh" ] && source "/home/tobsch/.jabba/jabba.sh"
+export JABBA_DIR="$HOME/.jabba"
+[ -s "$JABBA_DIR/jabba.sh" ] && source "$JABBA_DIR/jabba.sh"
