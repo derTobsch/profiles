@@ -1,2 +1,0 @@
-export JABBA_DIR="$HOME/.jabba"
-[ -s "$JABBA_DIR/jabba.sh" ] && source "$JABBA_DIR/jabba.sh"
