@@ -9,7 +9,7 @@ sudo apt-get install curl
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # Git
-cp ${HOME}/.gitconfig ${HOME}/.gitconfig.bak
+[[ -f ${HOME}/.gitconfig ]] && cp ${HOME}/.gitconfig ${HOME}/.gitconfig.bak
 ln -sf ${DIR}/.gitconfig ${HOME}
 
 # Bash with Git
