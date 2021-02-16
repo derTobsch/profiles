@@ -36,7 +36,7 @@
   wip = !git add -A && git commit --no-verify -m "[WIP]"
   co = checkout
   cob = checkout -b
-  rlb = !git branch --merged | grep -v \"master\\|development\" >/tmp/merged-branches && vi /tmp/merged-branches && xargs git branch -d </tmp/merged-branches
+  rlb = !git branch --merged | grep -v \"master\\|main\\|development\" >/tmp/merged-branches && vi /tmp/merged-branches && xargs git branch -d </tmp/merged-branches
   fix = commit --fixup
   fixit =  rebase -i --autosquash
   score = shortlog -s -n
