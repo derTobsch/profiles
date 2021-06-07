@@ -9,6 +9,7 @@ plugins=(
   zsh-autosuggestions
   docker
   kubectl
+  asdf
 )
 
 source $ZSH/oh-my-zsh.sh
