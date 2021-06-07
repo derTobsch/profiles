@@ -31,3 +31,5 @@ echo "> Docker-Compose installed"
 
 sudo snap install kubectl --classic
 echo "> K8s installed"
+
+echo "> Installing Docker-Compose..."
